@@ -1,0 +1,169 @@
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #173d31;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  flex: 1;
+}
+
+main h2 {
+  color: #202d3a;
+  margin-bottom: 24px;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 35px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.producto-card {
+  background-color: white;
+  border: 1px solid #dce3e8;
+  border-radius: 12px;
+  padding: 20px;
+  color: #202d3a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.producto-card h3 {
+  margin-top: 0;
+  color: #173d31;
+}
+
+.producto-card p {
+  color: #445366;
+}
+
+footer {
+  background-color: #173d31;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+/* Espacio para el menú inferior */
+.app {
+  padding-bottom: 76px;
+}
+
+/* Menú de navegación */
+.menu-inferior {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #173d31;
+  padding: 14px;
+  z-index: 10;
+}
+
+/* Enlaces del menú */
+.menu-inferior a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Página seleccionada */
+.menu-inferior a.active {
+  background-color: white;
+  color: #173d31;
+  font-weight: bold;
+}
+
+
+/* Preguntas frecuentes */
+
+.preguntas-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.pregunta {
+  background-color: white;
+  border: 1px solid #dce3e8;
+  border-radius: 10px;
+  padding: 20px;
+  color: #202d3a;
+}
+
+.pregunta summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #173d31;
+}
+
+.pregunta p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Adaptación del menú a pantallas pequeñas */
+.menu-inferior {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu-inferior a {
+  text-align: center;
+}
+
+
+.stock-controles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.stock-controles button {
+  background-color: #173d31;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.stock-controles button:hover {
+  background-color: #28654f;
+}
+
+.stock-controles button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
