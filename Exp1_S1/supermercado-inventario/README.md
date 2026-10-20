@@ -1,16 +1,62 @@
-# React + Vite
+# SuperMarket Inventario
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Aplicación web desarrollada para la asignatura **Desarrollo Frontend II (PFY2202)**, correspondiente a la Experiencia 1, Semana 1.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+El proyecto consiste en un sistema de gestión de inventario para un supermercado, desarrollado con React y React Router.
 
-## React Compiler
+## Tecnologías utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- HTML5
+- CSS3
+- JavaScript
+- React
+- React Router
+- Vite
+- Git y GitHub
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Visualización de productos del supermercado.
+- Información de precios y cantidades disponibles.
+- Aumento y disminución del stock.
+- Persistencia de datos mediante localStorage.
+- Navegación entre páginas sin recargar el sitio.
+- Menú de navegación inferior.
+- Sección Quiénes somos.
+- Sección Preguntas frecuentes con respuestas desplegables.
+- Diseño adaptable mediante CSS Grid.
+
+## Páginas disponibles
+
+| Ruta | Descripción |
+|---|---|
+| `/` | Inventario de productos |
+| `/nosotros` | Información del supermercado |
+| `/preguntas` | Preguntas frecuentes |
+
+## Instalación y ejecución
+
+Para ejecutar el proyecto en un equipo con Node.js instalado:
+
+1. Abrir una terminal en la carpeta `supermercado-inventario`.
+2. Instalar las dependencias ejecutando `npm install`.
+3. Iniciar el servidor de desarrollo con `npm run dev`.
+4. Abrir en el navegador la dirección local que indique Vite, normalmente `http://localhost:5173/`.
+
+## Almacenamiento
+
+Los cambios de stock se guardan en el almacenamiento local del navegador mediante `localStorage`.
+
+No se utiliza una base de datos ni un servidor backend.
+
+## Contexto académico
+
+**Asignatura:** Desarrollo Frontend II
+
+**Código:** PFY2202
+
+**Actividad:** Evaluación Formativa 1 — Utilizando tecnologías avanzadas de React en sitios web.
+
+**Caso:** Forma B — Supermercado.
